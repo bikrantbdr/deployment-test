@@ -4,7 +4,8 @@
   "description": "MERN stack hotel booking app",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "build":"npm install"
   },
   "author": "Sudeep-K",
   "license": "ISC",
