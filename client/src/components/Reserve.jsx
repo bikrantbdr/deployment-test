@@ -5,7 +5,7 @@ import useFetch from '../hooks/useFetch'
 
 
 const Reserve = () => {
-    const { data, loading, error } = useFetch(`/hotels/room/${hotelId}`)
+    // const { data, loading, error } = useFetch(`/hotels/room/${hotelId}`)
     
   return (
     <div>Reserve</div>

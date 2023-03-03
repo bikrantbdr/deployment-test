@@ -44,7 +44,7 @@ const Button = styled.button`
 `
 
 function FeaturedPropertyList() {
-    const { data, loading, error } = useFetch("/hotels?featured=true&limit=4")
+    const { data, loading, error } = useFetch("/api/hotels?featured=true&limit=4")
     console.log(data, "data is here")
 
     const images = [

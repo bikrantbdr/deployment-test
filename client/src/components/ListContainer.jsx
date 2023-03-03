@@ -101,7 +101,7 @@ function ListContainer() {
     const [dates, setDates] = useState(location.state.dates);
     const [options, setOptions] = useState(location.state.options);
 
-    const { data, loading, error, reFetch } = useFetch(`/hotels?city=${destination}&min=${min || 0}&max=${max || 200}`)
+    const { data, loading, error, reFetch } = useFetch(`/api/hotels?city=${destination}&min=${min || 0}&max=${max || 200}`)
 
   return (
     <Container>
