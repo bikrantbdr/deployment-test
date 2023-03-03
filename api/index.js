@@ -2,6 +2,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 const dotenv = require('dotenv')
 const cookieparser = require('cookie-parser')
+const cors = require('cors')
 
 const hotelRouter = require('./routers/hotel')
 const authRouter = require('./routers/auth')
@@ -16,6 +17,7 @@ mongoose.connect(process.env.MONGODB_URI)
 
 app.use(cookieparser())
 app.use(express.json())
+app.use(cors())
 
 app.use('/api/rooms', roomRouter)
 app.use('/api/hotels', hotelRouter)
@@ -29,6 +31,7 @@ app.use((err, req, res, next) => {
         message: err.message,
         stack: err.stack
     })
+    res.setHeader('Access-Control-Allow-Origin', 'https://sparkly-dasik-cd9aa0.netlify.app/');
 })
 
 app.listen(8800, () => {
