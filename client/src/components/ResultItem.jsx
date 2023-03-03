@@ -13,7 +13,7 @@ const Container = styled.div`
 `
 
 const ImageContainer = styled.img`
-    widht: 200px;
+    width: 200px;
     height: 200px;
     object-fit: cover;
 `
