@@ -11,6 +11,7 @@ const useFetch = (url) => {
             try {
                 setLoading(true);
                 const res = await axios.get(`https://booking-backend-4xe3.onrender.com${url}`)
+                res.setHeader('Access-Control-Allow-Origin', 'https://sparkly-dasik-cd9aa0.netlify.app/');
                 setData(res.data)
             } catch (error) {
                 setError(error)

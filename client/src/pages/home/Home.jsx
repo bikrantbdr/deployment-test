@@ -35,10 +35,6 @@ function Home() {
     }
     
   return (
-    useEffect(() => {
-      const { data, loading, error } = useFetch("https://booking-backend-4xe3.onrender.com/api/rooms/")
-      console.log(data, "data test")
-    },[]),
     <>
       <ThemeProvider theme={theme}>
         <NavBar />
