@@ -10,7 +10,7 @@ const useFetch = (url) => {
         const fetchData = async () => {
             try {
                 setLoading(true);
-                const res = await axios.get(`https://booking-backend-4xe3.onrender.com${url}`)
+                const res = await axios.get(url)
                 setData(res.data)
             } catch (error) {
                 setError(error)
