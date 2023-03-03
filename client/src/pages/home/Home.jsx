@@ -1,6 +1,7 @@
 import React,{useEffect} from 'react'
 import { ThemeProvider } from 'styled-components'
 import styled from 'styled-components'
+import useFetch from '../../hooks/useFetch'
 
 import Header from '../../components/Header'
 import NavBar from '../../components/NavBar'
